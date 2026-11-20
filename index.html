@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="glass">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ИМЯ_ТИМЫ — Разработка сайтов и простого ПО</title>
+  <meta name="description" content="Команда из 4–5 человек. Создаём современные сайты и простое программное обеспечение под ключ. Быстро, чисто, с результатом." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- BUBBLE BACKGROUND -->
+  <div id="bubbles" aria-hidden="true"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-mark" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="28" height="28" rx="8" stroke="white" stroke-width="2"/>
+            <path d="M10 22V10H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 16H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span>ИМЯ_ТИМЫ</span>
+      </a>
+
+      <nav class="nav" id="main-nav">
+        <a href="#services" data-anchor>Услуги</a>
+        <a href="#process" data-anchor>Процесс</a>
+        <a href="#team" data-anchor>Команда</a>
+        <a href="#cases" data-anchor>Кейсы</a>
+        <a href="#pricing" data-anchor>Цены</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+        <button class="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav">
+    <a href="#services" data-anchor>Услуги</a>
+    <a href="#process" data-anchor>Процесс</a>
+    <a href="#team" data-anchor>Команда</a>
+    <a href="#cases" data-anchor>Кейсы</a>
+    <a href="#pricing" data-anchor>Цены</a>
+    <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="display reveal">
+          Сайты и ПО для вашего бизнеса,<br>
+          <span class="gradient-text">которые решают задачи</span>
+        </h1>
+        <p class="lead reveal">
+          Мы проектируем и разрабатываем современные веб-решения и  программное обеспечение. Быстро, прозрачно и с фокусом на ваши желания.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">Обсудить проект →</a>
+          <a href="#cases" class="btn btn-secondary">Смотреть кейсы</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><strong>—</strong><span>завершённых проектов</span></div>
+          <div class="stat"><strong>—</strong><span>средний срок</span></div>
+          <div class="stat"><strong>—</strong><span>прозрачный процесс</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <img src="astronaut.png" alt="Космонавт в невесомости с деньгами" class="astronaut-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section id="pains" class="pains-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="display">Почему проекты <span class="gradient-text">проваливаются?</span></h2>
+        <p>Мы видели это десятки раз. Вот три главные причины, по которым сайты и ПО не приносят результата.</p>
+      </div>
+      <div class="pains-grid stagger">
+        <div class="pain-card reveal" style="--i:0">
+          <div class="pain-num">01</div>
+          <h3>«Сайт сделали, но заявок нет»</h3>
+          <p class="pain-problem">Дизайн делали для себя, а не под ваши цели. Красиво — не значит конверсионно.</p>
+          <div class="pain-solution"><span class="pain-solution-label">Наш подход</span><p>Начинаем с анализа аудитории и её болей. Каждый экран — под конкретную задачу клиента.</p></div>
+        </div>
+        <div class="pain-card reveal" style="--i:1">
+          <div class="pain-num">02</div>
+          <h3>«Подрядчик пропал после сдачи»</h3>
+          <p class="pain-problem">Нет прозрачного процесса. Непонятно, что происходит и когда будет результат.</p>
+          <div class="pain-solution"><span class="pain-solution-label">Наш подход</span><p>Регулярные демо, всегда на связи с вами, чёткие этапы. Вы всегда видите прогресс.</p></div>
+        </div>
+        <div class="pain-card reveal" style="--i:2">
+          <div class="pain-num">03</div>
+          <h3>«Заплатили много, а править страшно»</h3>
+          <p class="pain-problem">?????? — ?????????????????????????????</p>
+          <div class="pain-solution"><span class="pain-solution-label">Наш подход</span><p>???????????????????????????????????</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIT -->
+  <section id="audit" class="audit-section">
+    <div class="container">
+      <div class="audit-box reveal">
+        <div class="audit-content">
+          <h2 class="display">Сколько часов вы теряете <span class="gradient-text">на рутину?</span></h2>
+          <p>Ответьте на три вопроса — покажем, сколько времени можно вернуть бизнесу с помощью простой автоматизации.</p>
+          <div class="audit-inputs">
+            <div class="audit-field"><label for="audit-orders">Заявок в неделю</label><input type="range" id="audit-orders" min="0" max="100" value="20" step="1" /><span class="audit-value" id="audit-orders-val">20</span></div>
+            <div class="audit-field"><label for="audit-manual">Ручных операций на заявку</label><input type="range" id="audit-manual" min="0" max="20" value="5" step="1" /><span class="audit-value" id="audit-manual-val">5</span></div>
+            <div class="audit-field"><label for="audit-team">Сотрудников задействовано</label><input type="range" id="audit-team" min="1" max="10" value="2" step="1" /><span class="audit-value" id="audit-team-val">2</span></div>
+          </div>
+          <div class="audit-result"><span class="audit-result-label">Потенциальная экономия</span><strong id="audit-result-hours">—</strong><span class="audit-result-unit">часов в неделю</span></div>
+          <a href="#contact" class="btn btn-primary">Обсудить автоматизацию →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="display">Что мы делаем</h2>
+        <p>От лендинга до небольшого внутреннего инструмента — берём на себя весь цикл.</p>
+      </div>
+      <div class="bento stagger">
+        <div class="bento-card span-7 reveal" style="--i:0"><div class="bento-icon">◈</div><h3>Лендинги и маркетинговые сайты</h3><p>Высокая конверсия, современный дизайн 2026, быстрая загрузка и адаптив. От идеи до запуска за 2–4 недели.</p></div>
+        <div class="bento-card span-5 reveal" style="--i:1"><div class="bento-icon">◎</div><h3>Корпоративные сайты</h3><p>Многостраничные решения с понятной структурой, SEO-основой и удобной админкой.</p></div>
+        <div class="bento-card span-4 reveal" style="--i:2"><div class="bento-icon">◇</div><h3>Простое ПО и инструменты</h3><p>Внутренние панели, калькуляторы, CRM-лайт, автоматизации и мини-сервисы под конкретные задачи.</p></div>
+        <div class="bento-card span-4 reveal" style="--i:3"><div class="bento-icon">△</div><h3>Редизайн и улучшения</h3><p>Обновляем устаревшие сайты: визуал, скорость, UX и техническая часть.</p></div>
+        <div class="bento-card span-4 reveal" style="--i:4"><div class="bento-icon">✦</div><h3>Поддержка и развитие</h3><p>После запуска остаёмся рядом: правки, новые функции, мониторинг.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="display">Как мы работаем</h2>
+        <p>Прозрачный процесс без сюрпризов. К каждому этапу прикреплён конкретный артефакт — можете посмотреть, как это выглядит.</p>
+      </div>
+      <div class="process-timeline stagger">
+        <div class="process-step reveal" style="--i:0"><div class="process-step-header"><span class="process-step-num">01</span><h3>Бриф и оценка</h3></div><p>Разбираем задачу, цели и ограничения. Даём сроки и фиксированную стоимость.</p><a href="#" class="process-artifact" target="_blank" rel="noopener"><span>Пример брифа (PDF)</span><span class="artifact-arrow">→</span></a></div>
+        <div class="process-step reveal" style="--i:1"><div class="process-step-header"><span class="process-step-num">02</span><h3>Дизайн и прототип</h3></div><p>Создаём структуру и визуал. Согласовываем ключевые экраны до начала разработки.</p><a href="#" class="process-artifact" target="_blank" rel="noopener"><span>Прототип в Figma</span><span class="artifact-arrow">→</span></a></div>
+        <div class="process-step reveal" style="--i:2"><div class="process-step-header"><span class="process-step-num">03</span><h3>Разработка</h3></div><p>Чистый код, адаптив, производительность. Регулярные демо и правки по ходу.</p><a href="#" class="process-artifact" target="_blank" rel="noopener"><span>Staging-демо</span><span class="artifact-arrow">→</span></a></div>
+        <div class="process-step reveal" style="--i:3"><div class="process-step-header"><span class="process-step-num">04</span><h3>Запуск и передача</h3></div><p>Тестируем, выкладываем, обучаем и передаём доступы. Дальше — поддержка по желанию.</p><a href="#" class="process-artifact" target="_blank" rel="noopener"><span>Чек-лист передачи</span><span class="artifact-arrow">→</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header reveal"><h2 class="display">Команда</h2><p>Небольшая сильная команда. Каждый — специалист, а не «универсальный солдат».</p></div>
+      <div class="team-grid stagger">
+        <div class="team-card reveal" style="--i:0"><div class="avatar">АК</div><h3>Алексей</h3><div class="role">Основатель & Lead</div><p>Архитектура, стратегия, коммуникация с клиентом</p></div>
+        <div class="team-card reveal" style="--i:1"><div class="avatar">МД</div><h3>Мария</h3><div class="role">Frontend</div><p>Интерфейсы, анимации, производительность</p></div>
+        <div class="team-card reveal" style="--i:2"><div class="avatar">ИС</div><h3>Игорь</h3><div class="role">Backend</div><p>API, базы, интеграции, простая логика</p></div>
+        <div class="team-card reveal" style="--i:3"><div class="avatar">ЕК</div><h3>Елена</h3><div class="role">Дизайн & UX</div><p>Визуал, прототипы, пользовательский опыт</p></div>
+        <div class="team-card reveal" style="--i:4"><div class="avatar">+1</div><h3>По необходимости</h3><div class="role">Специалист</div><p>Подключаем 5-го человека под конкретный проект</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases">
+    <div class="container">
+      <div class="section-header reveal"><h2 class="display">Недавние проекты</h2><p>Реальные задачи, которые мы решали. Названия и детали можно заменить на ваши.</p></div>
+      <div class="cases-grid stagger">
+        <article class="case-card reveal" style="--i:0"><div class="case-visual" data-label="Лендинг"></div><div class="case-body"><h3>Сервис записи онлайн</h3><p>Лендинг + простая система бронирования. Конверсия выросла в 2.1 раза.</p></div></article>
+        <article class="case-card reveal" style="--i:1"><div class="case-visual" data-label="ПО" style="background: linear-gradient(135deg, #38bdf8, #a78bfa);"></div><div class="case-body"><h3>Внутренняя панель учёта</h3><p>Лёгкий инструмент для малого производства. Заменил Excel и сэкономил 12 часов в неделю.</p></div></article>
+        <article class="case-card case-card-slider reveal" style="--i:2">
+          <div class="case-slider-wrap">
+            <div class="case-slider" id="case-slider">
+              <div class="case-slider-before"><div class="case-slider-label">До</div><div class="case-slider-visual case-slider-visual-old"></div></div>
+              <div class="case-slider-after" id="case-slider-after"><div class="case-slider-label">После</div><div class="case-slider-visual case-slider-visual-new"></div></div>
+              <div class="case-slider-handle" id="case-slider-handle"><span>↔</span></div>
+            </div>
+          </div>
+          <div class="case-body"><h3>Корпоративный сайт студии</h3><p>Полный редизайн и перенос. Скорость загрузки — 95+ PageSpeed.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="stack-section">
+    <div class="container">
+      <div class="section-header reveal"><h2 class="display">Стек и компетенции</h2><p>Мы не делаем всё. Мы делаем то, в чём разбираемся лучше всего — и честно говорим об этом.</p></div>
+      <div class="stack-grid stagger">
+        <div class="stack-col reveal" style="--i:0"><h3 class="stack-title stack-title-yes">Работаем лучше всего</h3><ul class="stack-list"><li>React / Next.js — интерфейсы и SPA</li><li>Node.js / Express — API и бэкенд</li><li>Telegram Bot API — автоматизация</li><li>Tilda / Webflow — быстрые лендинги</li><li>Figma — дизайн и прототипы</li></ul></div>
+        <div class="stack-col reveal" style="--i:1"><h3 class="stack-title stack-title-no">Не берём</h3><ul class="stack-list stack-list-no"><li>Проекты на 1С и сложные ERP</li><li>Мобильные приложения (iOS/Android)</li><li>Геймификацию и 3D-игры</li><li>Поддержку legacy-систем на PHP</li><li>Проекты «сделайте всё за $100»</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="container">
+      <div class="section-header reveal"><h2 class="display">Прозрачные цены</h2><p>Фиксированная стоимость. Без скрытых платежей. Подходит для большинства задач в диапазоне ~$1000.</p></div>
+      <div class="pricing-grid stagger">
+        <div class="price-card reveal" style="--i:0"><div class="plan">Старт</div><div class="price">$790 <span>/ проект</span></div><p class="desc">Лендинг или одностраничник</p><ul class="price-features"><li>До 5 секций</li><li>Адаптив + базовая анимация</li><li>Форма заявки</li><li>SEO-основа</li><li>2 недели</li></ul><a href="#contact" class="btn btn-secondary" style="width:100%">Выбрать</a></div>
+        <div class="price-card featured reveal" style="--i:1"><div class="plan">Оптимальный</div><div class="price">$1 190 <span>/ проект</span></div><p class="desc">Сайт или простой инструмент</p><ul class="price-features"><li>До 8–10 страниц / экранов</li><li>Индивидуальный дизайн</li><li>Админка или простая логика</li><li>Интеграции (Telegram, CRM)</li><li>3–5 недель</li></ul><a href="#contact" class="btn btn-primary" style="width:100%">Выбрать</a></div>
+        <div class="price-card reveal" style="--i:2"><div class="plan">Кастом</div><div class="price">от $1 800</div><p class="desc">Сложный сайт или ПО</p><ul class="price-features"><li>Индивидуальный объём</li><li>Сложная логика / база данных</li><li>Несколько ролей пользователей</li><li>Приоритетная поддержка</li><li>Срок по оценке</li></ul><a href="#contact" class="btn btn-secondary" style="width:100%">Обсудить</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2 class="display">Готовы обсудить проект?</h2>
+        <p>Напишите коротко, что нужно сделать. Ответим в течение дня и предложим следующий шаг.</p>
+        <div class="hero-actions"><a href="mailto:hello@forge.dev" class="btn btn-primary">Написать на почту</a><a href="https://t.me/" class="btn btn-secondary" target="_blank" rel="noopener">Telegram</a></div>
+        <p class="cta-note">Все сайты проходят проверку на AI-читаемость: структурированные данные, семантическая вёрстка, ясные ответы на ключевые вопросы о продукте в первом экране.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="logo" style="margin-bottom:0.5rem">
+          <div class="logo-mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="28" height="28" rx="8" stroke="white" stroke-width="2"/><path d="M10 22V10H22" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 16H18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span>ИМЯ_ТИМЫ</span>
+        </div>
+        <p>Разработка сайтов и простого ПО · Команда 4–5 человек</p>
+      </div>
+      <div class="footer-links"><a href="#services">Услуги</a><a href="#pricing">Цены</a><a href="#contact">Контакты</a></div>
+      <div>© 2026 ИМЯ_ТИМЫ. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
